@@ -1,0 +1,21 @@
+    Levelnum = ""
+    leternum = ""
+    rightans = ""
+    clue1 =  ""
+    clue2 = ""
+
+    print("Level " + Levelnum)
+    print(leternum + " Letter word")
+    ans = input()
+    if str(ans.lower()) != rightans:
+        
+        print("Wrong")
+        print("Clue 1: " + clue1)
+        ans = input()
+        if str(ans.lower()) != rightans:
+            print("Wrong")
+            print("Clue 2: "+clue2)
+            ans = input()
+            if str(ans.lower()) != rightans:
+                 print("Game over")
+                 sys.exit()
